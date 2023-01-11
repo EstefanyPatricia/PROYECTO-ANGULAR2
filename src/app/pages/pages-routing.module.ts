@@ -9,13 +9,14 @@ import { AppComponent } from '../app.component';
 
 const routes: Routes = [
   //rutas protegidas
+  //rutas hijas
   {path: '', component:PagesComponent,
    children:[
     {path: 'dashboard', component:DashboardComponent},
     {path: 'category', component:CategoryComponent},
     {path: 'product', component:ProductComponent}
 ] },
-  //{path: '**', component:NotFoundComponent},
+  
 
 ];
 

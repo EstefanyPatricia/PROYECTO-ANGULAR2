@@ -20,7 +20,7 @@ import { AuthComponent } from './auth.component';
   exports: [
     LoginComponent,
     RegisterComponent,
-    AuthComponent
+    AuthComponent,
   ]
 })
 export class AuthModule { }

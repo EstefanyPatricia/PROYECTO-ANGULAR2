@@ -11,9 +11,9 @@ import { ProductComponent } from './pages/product/product.component';
 
 const routes: Routes = [
 
-  //AUTH
-  {path: 'login', component:LoginComponent},
-  {path: 'register', component:RegisterComponent},
+   //rutas protegidas
+  //{path: 'login', component:LoginComponent},
+  //{path: 'register', component:RegisterComponent},
 
   {path: '', redirectTo:'/dashboard/',pathMatch:'full'},
   {path: '**', component:NotFoundComponent},
