@@ -28,9 +28,9 @@ export class ProductComponent implements OnInit {
 
   createProduct(){
     const data = {
-      title:"Zapatos",
+      title:"Salas",
       price:20,
-      description:"deportivos / Henry Tito",
+      description:"Sala en color Bigi / Estefany patricia",
       images:["https://sdfsdgsdhasjh"],
       categoryId:1
     }
@@ -43,9 +43,9 @@ export class ProductComponent implements OnInit {
 
   updateProduct(){
     const data = {
-      title:"camisas",
+      title:"De la Madera Muebles",
       price:25,
-      description:"ropa deportiva / Henry Tito",
+      description:"ropa deportiva / Estefany Patricia",
       images:["https://https://i.pinimg.com/originals/15/c5/69/15c56972ae4fbb6b394a6e6efced477b.jpg"],
       categoryId:1
     }
