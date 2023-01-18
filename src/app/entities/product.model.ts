@@ -1,10 +1,18 @@
-import { ICategory } from "./category.model";
+import { CategoryModel} from "./category.model";
 
-export interface IProduct {
-    title: string;
-    price: number;
-    description: string;
-    images: string [];
-    category: ICategory;
-    categoryId: number;
+export interface ProductModel{
+    id:number;
+    title:string;
+    price:number;
+    description:string;
+    images:string[];
+    category:CategoryModel;
+};
+
+export interface CreateProductDto extends Omit<ProductModel, 'id'| 'category'>{
+    categoryId:number;
+};
+
+export interface UpdateProductDto extends Partial<ProductModel>{
+    categoryId?:number;
 }
