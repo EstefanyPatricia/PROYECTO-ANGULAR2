@@ -30,7 +30,7 @@ export class ProductComponent implements OnInit {
     const data = {
       title:"Salas",
       price:20,
-      description:"Sala en color Bigi / Estefany patricia",
+      description:"Sala en color Beigi / Estefany patricia",
       images:["https://sdfsdgsdhasjh"],
       categoryId:1
     }
@@ -45,21 +45,21 @@ export class ProductComponent implements OnInit {
     const data = {
       title:"De la Madera Muebles",
       price:25,
-      description:"ropa deportiva / Estefany Patricia",
+      description:"Sala en color Beigi / Estefany Patricia",
       images:["https://https://i.pinimg.com/originals/15/c5/69/15c56972ae4fbb6b394a6e6efced477b.jpg"],
       categoryId:1
     }
     const url = "https://api.escuelajs.co/api/v1/products/192";
-    this.httpClient.put(url, data).subscribe(
-      response => {console.log(response);
+    this.productHttpService.update(30, data).subscribe(
+      (response ) => {console.log(response);
       }
     );
   }
 
   deleteProduct(){
     const url = "https://api.escuelajs.co/api/v1/products/192";
-    this.httpClient.delete(url).subscribe(
-      response => {console.log(response);
+    this.productHttpService.destroy(61).subscribe
+    (response => {console.log(response);
       }
     );
   }
